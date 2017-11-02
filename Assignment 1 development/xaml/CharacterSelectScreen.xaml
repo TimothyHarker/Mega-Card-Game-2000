@@ -1,0 +1,98 @@
+﻿<Page x:Class="Assignment_1_development.CharacterSelectScreen"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Assignment_1_development"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="550"
+      Title="CharacterSelectScreen">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\User\Documents\UNI\Semester 2\Dev Ops 1 (ICTPRG415)\Assignment 1 (development)\Code\Assignment 1 development\Assignment 1 development\Images\Backgrounds\CharacterSelectBG.jpg" />
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="200"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- "Choose Your Hero" Label -->
+        <Label Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="18" Foreground="White">
+            Choose Your Hero
+        </Label>
+
+        <!-- Character Portraits -->
+        
+        <!--Warrior Class -->
+        <Image Grid.Column="0" Grid.Row="1" Source="C:\Users\User\Documents\UNI\Semester 2\Dev Ops 1 (ICTPRG415)\Assignment 1 (development)\Code\Assignment 1 development\Assignment 1 development\Images\Characters\Warrior.png">
+        </Image>
+        <!-- Thief Class -->
+        <Image Grid.Column="1" Grid.Row="1" Source="C:\Users\User\Documents\UNI\Semester 2\Dev Ops 1 (ICTPRG415)\Assignment 1 (development)\Code\Assignment 1 development\Assignment 1 development\Images\Characters\Thief.png">
+        </Image>
+        <!-- Mage Class -->
+        <Image Grid.Column="2" Grid.Row="1" Source="C:\Users\User\Documents\UNI\Semester 2\Dev Ops 1 (ICTPRG415)\Assignment 1 (development)\Code\Assignment 1 development\Assignment 1 development\Images\Characters\Mage.png">
+        </Image>
+       
+        
+        <!-- Character Descriptions -->
+        
+        <!-- Warrior -->
+        <Label Grid.Column="0" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="18" Foreground="Black">
+            Warrior
+        </Label>
+        <TextBlock Grid.Column="0" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontSize="15" Foreground="Black">
+            <TextBlock.Background>
+                <SolidColorBrush Color="Gray" Opacity="0.7" />
+            </TextBlock.Background> 
+            Health: 50 <LineBreak /> Attack: 10 <LineBreak /> Special: Beserk
+        </TextBlock>
+
+        <!-- Thief -->
+        <Label Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="18" Foreground="Black">
+            Thief
+        </Label>
+        <TextBlock Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontSize="15" Foreground="Black">
+            <TextBlock.Background>
+                <SolidColorBrush Color="Gray" Opacity="0.7" />
+            </TextBlock.Background>
+            Health: 50 <LineBreak /> Attack: 10 <LineBreak /> Special: Backstab
+        </TextBlock>
+
+        <!-- Mage -->
+        <Label Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" FontSize="18" Foreground="Black">
+            Mage
+        </Label>
+        <TextBlock Grid.Column="2" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontSize="15" Foreground="Black">
+            <TextBlock.Background>
+                <SolidColorBrush Color="Gray" Opacity="0.7" />
+            </TextBlock.Background>
+            Health: 50 <LineBreak /> Attack: 10 <LineBreak /> Special: Fireball
+        </TextBlock>
+        
+        <!-- Choose Hero Buttons -->
+        
+        <!-- Warrior Select Button -->
+        <Button Grid.Column="0" Grid.Row="4" Margin="0,0,0,0" Width="125"
+                Height="25" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" Click="Button_Click_3">Choose Warrior
+        </Button>
+
+        <!-- Thief Select Button -->
+        <Button Grid.Column="1" Grid.Row="4" Margin="0,0,0,0" Width="125"
+                Height="25" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" Click="Button_Click_2">Choose Thief
+        </Button>
+
+        <!-- Mage Select Button -->
+        <Button Grid.Column="2" Grid.Row="4" Margin="0,0,0,0" Width="125"
+                Height="25" HorizontalAlignment="Center" FontFamily="Trebuchet MS" FontWeight="Bold" Click="Button_Click_4">Choose Mage
+        </Button>
+    </Grid>
+</Page>
